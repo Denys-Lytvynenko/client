@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body,
+#root,
+.App,
+.content {
+    min-height: 100vh;
+}
+
+.main {
+    margin-top: 57px;
+}
+
+.page {
+    &__content {
+        min-height: calc(100vh - 122px);
+    }
+}
+
+.reading-list__item {
+    &:first-child {
+        border-top: 1px solid rgb(0 0 0 / 13%) !important;
+    }
+    &:last-child {
+        border-bottom: 1px solid rgb(0 0 0 / 13%) !important;
+    }
+}
+
+.block-list {
+    max-height: calc(100vh - 155px);
+    overflow-y: auto;
+}
+
+.book-item {
+    cursor: pointer;
+
+    &:hover {
+        background: #f8f9fa;
+    }
+}
+
+.card-icon {
+    font-size: 70px;
+    background: gray;
+    text-align: center;
+}
+
+.card-text__title {
+    font-weight: 500;
+}
